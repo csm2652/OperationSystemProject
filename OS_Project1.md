@@ -115,7 +115,7 @@ yield가 없는 mlfq(levcnt 없이), stride가 혼합된 코드를 돌릴 경우
 
 stride만의 코드를 돌릴 경우입니다(`test_stride.c`).
 
-![test_stride](D:\RJ\STUDY\3학년\1학기\운영체제\project\forgithub\OperationSystemProject\md_image\test_stride.png)
+![test_stride](./md_image/test_stride.png)
 
 + stride 05%: 18698 -> 07.2%
 + stride 15%: 52230 -> 20.2%
