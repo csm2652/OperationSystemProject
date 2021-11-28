@@ -59,8 +59,10 @@
  MLFQ의 process는 실행이 되면, `checkTimeAllotment` 함수를 통해 time interrupt가 일어나도 MLFQ에서 뽑힌 process에 FQ level에 맞는 time allotment만큼 실행되는 것을 보장해줍니다.
 
 이를 그림으로 설명하면 아래와 같은 방법이 됩니다.
-![스케쥴설계그림](./md_image/스케쥴설계그림.png)
 
+
+![스케쥴설계그림](./md_image/스케쥴설계그림.png)
+=======
 # Scheduling scenario
 
 
