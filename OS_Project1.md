@@ -59,7 +59,7 @@
  MLFQ의 process는 실행이 되면, `checkTimeAllotment` 함수를 통해 time interrupt가 일어나도 MLFQ에서 뽑힌 process에 FQ level에 맞는 time allotment만큼 실행되는 것을 보장해줍니다.
 
 이를 그림으로 설명하면 아래와 같은 방법이 됩니다.
-![스케쥴설계그림](D:\RJ\STUDY\3학년\1학기\운영체제\스케쥴설계그림.png)
+![스케쥴설계그림](D:\RJ\STUDY\3학년\1학기\운영체제\project\forgithub\OperationSystemProject\md_image\스케쥴설계그림.png)
 
 # Scheduling scenario
 
@@ -84,7 +84,7 @@ stride는 최소 5%, 15%를  보장받으며, mlfq또한 최소 20%를 보장 �
 
 만약 MLFQ와 stride가 100%를 꽉 채우지 못할경우 mlfq와 추가적으로 cpu를 할당합니다.
 
-![test_scheduler](D:\RJ\STUDY\3학년\1학기\운영체제\image\test_scheduler.png)
+![test_scheduler](D:\RJ\STUDY\3학년\1학기\운영체제\project\forgithub\OperationSystemProject\md_image\test_scheduler.png)
 
 + stride 5%: 13974 -> 6.7%
 + stride 15%: 38309 -> 18.6% 
@@ -98,7 +98,7 @@ stride는 최소 5%, 15%를  보장받으며, mlfq또한 최소 20%를 보장 �
 
 yield가 없는 mlfq(levcnt 없이), stride가 혼합된 코드를 돌릴 경우입니다(`test_mlfq.c`).
 
-![mlfq](D:\RJ\STUDY\3학년\1학기\운영체제\image\mlfq.PNG)
+![mlfq](D:\RJ\STUDY\3학년\1학기\운영체제\project\forgithub\OperationSystemProject\md_image\mlfq.PNG)
 
 + stride 20%: 56179 -> 21.3%
 + stride 40%: 96018 -> 36.4% 
@@ -113,7 +113,7 @@ yield가 없는 mlfq(levcnt 없이), stride가 혼합된 코드를 돌릴 경우
 
 stride만의 코드를 돌릴 경우입니다(`test_stride.c`).
 
-![test_stride](D:\RJ\STUDY\3학년\1학기\운영체제\image\test_stride.png)
+![test_stride](D:\RJ\STUDY\3학년\1학기\운영체제\project\forgithub\OperationSystemProject\md_image\test_stride.png)
 
 + stride 05%: 18698 -> 07.2%
 + stride 15%: 52230 -> 20.2%
